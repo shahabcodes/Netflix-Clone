@@ -1,4 +1,4 @@
-<header class="h-[68px] z-10 bg-gray-900 sticky top-0">
+<header class="h-[68px] z-10 bg-gray-900 sticky top-0 flex items-center justify-between px-10">
     <!-- Logo + Nav Items -->
     <div class="flex gap-5">
         <img width="110" src="/assets/pngwing.com.png" alt="netflix-logo">
@@ -9,4 +9,15 @@
         </ul>
     </div>
     <!-- Welcome User | Profile Image | Sign Out -->
+    <div class="text-white flex items-center gap-4">
+        <div class="flex items-center gap-2">
+            <a ><span>
+                Welcome <strong>{{firstName}}</strong>
+            </span></a>
+        <img class="overflow-hidden rounded-[50%]" [src]="userImg" width="42" alt="user-img">
+        </div>
+
+        &nbsp; | &nbsp;
+        <a href="/">SignOut</a>
+    </div>
 </header>

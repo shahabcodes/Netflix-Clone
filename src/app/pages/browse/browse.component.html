@@ -5,5 +5,14 @@ userProfileImg is from browse component, we are passing it to header component
 
 <app-banner></app-banner>
 
-<app-movie-carousel [videoContents]="popularMovies" [title]="'Popular Movies'"></app-movie-carousel>
+<app-movie-carousel [title]="'Popular on Netflix'" [videoContents]="movies" />
 
+<app-movie-carousel [title]="'Trending TV shows'" [videoContents]="tvShows" />
+
+<app-movie-carousel [title]="'Now Playing Movies'" [videoContents]="nowPlayingMovies" />
+
+<app-movie-carousel [title]="'Popular Movies'" [videoContents]="popularMovies" />
+
+<app-movie-carousel [title]="'Top Rated Movies'" [videoContents]="topRatedMovies" />
+
+<app-movie-carousel [title]="'Upcoming Movies'" [videoContents]="upcomingMovies" />
